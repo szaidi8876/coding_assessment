@@ -5,7 +5,7 @@ require_relative 'coding_assessment'
 
 Minitest::Reporters.use!
 
-class SubstringFinderTest < Minitest::Test
+class CodingAssessmentTest < Minitest::Test
   # above_below tests
   def test_above_below_correct_output
     output = CodingAssesment.above_below([10, 20, 30, 40, 50], 35)
