@@ -18,13 +18,13 @@ class SubstringFinderTest < Minitest::Test
       CodingAssesment.above_below("test", 35)
     end
 
-		assert_equal("Incorrect data type passed for Array argument.", exception.message)
+    assert_equal("Incorrect data type passed for Array argument.", exception.message)
 
     exception_2 = assert_raises ArgumentError do
       CodingAssesment.above_below([10, 20, 30, 40, 50], "test")
     end
 
-		assert_equal("Incorrect data type passed for Integer argument.", exception_2.message)
+    assert_equal("Incorrect data type passed for Integer argument.", exception_2.message)
 
     exception_3 = assert_raises ArgumentError do
       CodingAssesment.above_below("test", "test")
@@ -45,13 +45,13 @@ class SubstringFinderTest < Minitest::Test
       CodingAssesment.string_rotation(35, 3)
     end
 
-		assert_equal("Incorrect data type passed for String argument.", exception.message)
+    assert_equal("Incorrect data type passed for String argument.", exception.message)
 
     exception_2 = assert_raises ArgumentError do
       CodingAssesment.string_rotation("test", "test")
     end
 
-		assert_equal("Incorrect data type passed for Integer argument.", exception_2.message)
+    assert_equal("Incorrect data type passed for Integer argument.", exception_2.message)
 
     exception_3 = assert_raises ArgumentError do
       CodingAssesment.string_rotation(35, [3, 4, 5, 6])
